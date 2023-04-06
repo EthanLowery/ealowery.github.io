@@ -1,0 +1,48 @@
+/* CSS Document */
+
+/* styling for game*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black; 
+    align-content: center;
+	background-color: rgba(130,212,255,1.00);
+	margin-left: 340px;
+}
+#character{
+    width: 20px;
+    height: 50px;   
+    background-color: blueviolet;
+    position: relative;
+    top: 150px;
+    left: 70px;
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: relative;
+    top: 130px;
+    left: 480px;
+	border-radius: 70%;
+    animation: block 1300ms linear infinite;
+}
+
+@keyframes block{
+    0%{left:480px;}
+    100%{left: -40px;}   
+}

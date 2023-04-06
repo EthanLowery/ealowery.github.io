@@ -1,0 +1,201 @@
+
+:root{
+	background-color: #282828;
+}
+
+p{
+	color: white;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+dl{
+	color: white;
+	font-family: Consolas;
+}
+
+form{
+	color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: blueviolet;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo{
+	border-radius: 50%;	
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.textLink{
+	font-size: 12pt;
+}
+
+
+/*Navigation bar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+
+/* Rule for anchor tags*/
+
+
+ a{
+	 font-family: monospace;
+      color: #631a98;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:hover{
+      color: purple;
+      background-color: transparent;
+      text-decoration: none;
+}
+
+/*For headers 1 - 4*/
+ section {
+	 
+        justify-content: flex;
+        align-items: center;
+
+    }
+
+    h1{
+		font-family: Consolas;
+        font-size: 80px;
+        font-weight: 700px;
+        color: #363636;
+        position: relative;
+        text-align: center;
+
+    }
+
+    h1::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: attr(data-text);
+        background-image: linear-gradient(rgb(90, 164, 255), rgb(149, 27, 237), rgb(249, 58, 249) );
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: loading 6s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+
+    @keyframes loading {
+        0% { height: 0;}
+        20% { height: 45%;}
+        80% { height: 75%;}
+        90% { height: 85%;}
+        100% { height: 100%;}
+    }
+
+ h2, h3, h4{
+	 font-family: Consolas; 
+	 color: white;
+	}
+
+
+
+/*Classes for inputs in form*/
+.formBorder{
+        border-color: black;
+        box-sizing: inherit;
+        margin-top: 15px 15px;
+        margin: 15px;
+        margin-left: 15px;
+        padding: 5px;
+        align-content: center;
+		border-radius: 25px;
+}
+	
+
+.formBorder:hover{   border-color: rgb(206, 159, 245);    }
+.formBorder:active{  border-color: rgb(9, 223, 34);    }
+    
+.submit{
+        color: white;
+        background-color: rgb(72, 67, 67);
+        border:  rgb(72, 67, 67);
+        margin: 15px;
+        padding: 15px;
+        height: 45px;
+        width: 90px;
+		box-sizing: border-box;
+    }
+.submit:hover{
+        background-color: rgb(43, 36, 36);
+    }
+    
+ .form{
+        background:linear-gradient(45deg, rgb(190, 69, 190), rgb(94, 19, 148), rgb(208, 90, 208));
+        text-align: center;
+        align-content: center;
+        height: 580px;
+        width: 450px;
+        border: solid black;
+	 	    margin-left: 365px;
+    }
+	
+.query1{
+		border: solid black;
+		height: 130px;
+		width: 305px;
+		border-radius: 16px;
+	
+
+	  }
+.query1:hover{
+		border-color: rgb(206, 159, 245);
+	  }
