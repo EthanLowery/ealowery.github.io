@@ -1,3 +1,4 @@
 # ealowery.github.io
-This repository is for my end of semester class assignment.
+This repository contains files for my portfolio website
+
 
