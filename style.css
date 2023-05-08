@@ -31,13 +31,13 @@ form{
 }
 
 .logo{
-	border-radius: 50%;	
+	border-radius: 25px;	
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 45%;
+  width: 30%;
   padding: 15px;
 }
 
@@ -64,10 +64,10 @@ form{
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     overflow: hidden;
-    background-color: #333333;
+    background-color: none;
   }
   
   li {
@@ -78,12 +78,24 @@ ul {
     display: block;
     color: white;
     text-align: center;
+    font-size: 14pt;
     padding: 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111111;
+    background-color: purple;
+    color: white;
+    border-radius: 25px;
+    height:35px;
+    width: 70px;
+  }
+
+  .active{
+    background-color: purple;
+    border-radius: 25px;
+    height:35px;
+    width: 70px;
   }
 
 /* Rule for anchor tags*/
@@ -96,7 +108,7 @@ ul {
       text-decoration: none;
   }
   a:hover{
-      color: purple;
+      color: rgb(240, 200, 240);
       background-color: transparent;
       text-decoration: none;
 }
@@ -111,8 +123,8 @@ ul {
 
     h1{
 		font-family: Consolas;
-        font-size: 80px;
-        font-weight: 700px;
+        font-size: 90px;
+        font-weight: 800px;
         color: #363636;
         position: relative;
         text-align: center;
@@ -147,7 +159,14 @@ ul {
 	}
 
 
-
+/*Rules for video tags*/
+video{
+  margin-left: 350px;
+  border: solid black;
+}
+video:hover{
+  border: solid #631a98;
+}
 /*Classes for inputs in form*/
 .formBorder{
         border-color: black;
@@ -162,7 +181,7 @@ ul {
 	
 
 .formBorder:hover{   border-color: rgb(206, 159, 245);    }
-.formBorder:active{  border-color: rgb(9, 223, 34);    }
+.formBorder:active{  border-color: rgb(74, 9, 158);    }
     
 .submit{
         color: white;
@@ -185,7 +204,7 @@ ul {
         height: 580px;
         width: 450px;
         border: solid black;
-	 	    margin-left: 365px;
+	 	    margin-left: 720px;
     }
 	
 .query1{
